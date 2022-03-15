@@ -1,0 +1,82 @@
+@import 'remark';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  border:none;
+}
+section, article, header, footer, aside, details, summary, dialog, figcaption, figure, hgroup, main, nav, command, fieldset {
+  display:block;
+  margin:0;
+}
+section, article, header, footer, aside {
+  position:relative;
+}
+// chrome user agent styleseet fix
+dialog {
+  position:static;
+  width:auto;
+  height:auto;
+  margin:initial;
+  padding:initial;
+  border:none;
+  background-color:white;
+}
+// media is inline-block
+audio,canvas,progress,video {
+  display:inline-block;
+  margin:0;
+}
+script, style, template, [hidden] {
+  display:none !important;
+}
+[ghost] {
+  visibility:hidden;
+}
+[disabled] {
+  @include disabled-variant;
+}
+input,button,select,textarea {
+  font-family: inherit;  font-size: inherit;
+}
+input,button,select {
+  display:inline-block;
+}
+ul, menu, ol {
+  display:block;
+  padding:0;
+  margin:0;
+  > li {
+    list-style-position:inside;
+  }
+}
+ol {
+  > li {
+    list-style-type:decimal;
+  }
+}
+menu {
+  > li {
+    list-style:none;
+    cursor:pointer;
+  }
+}
+dl,dd,dt {
+  margin:0;
+  text-indent:0;
+}
+label {
+  cursor:inherit;
+}
+

@@ -1,0 +1,28 @@
+.menu-layout {
+  header {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid gray;
+    
+    .brand {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    nav {
+      position: absolute;
+      top: 10px;
+      left: 90px;
+      right: 0px;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        + li {
+          margin-left:10px;
+        }
+      }
+    }
+  }
+}
